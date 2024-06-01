@@ -1,0 +1,134 @@
+.basic-services h1 {
+	color: rgba(255, 255, 255, 0.475);
+	display: flex;
+	align-items: center;
+gap: 10px;
+}
+.basic-services h1 span{
+	color: white;
+}
+.basic-services h2{
+	color: white;
+	font-size: 40px;
+}
+.basic-services{
+	display: flex;
+	gap: 35pc;
+	line-height: normal;
+align-items: start;
+}
+.services{
+	position: absolute;
+	top: 1100px;
+}
+.sait-developer{
+	width: 680px;
+	height: 350px;
+	border-radius:30px ;
+	border: solid rgba(255, 255, 255, 0.283) 1px;
+}
+.blocks{
+	margin-top: 90px;
+}
+.sait-developer h1{
+	color: white;
+	font-size: 35px;
+	margin: 35px 0 10px 30px;
+	font-weight: 100;
+}
+.sait-developer-p p{
+	color: rgba(255, 255, 255, 0.543);
+	font-size: 15px;
+}
+.sait-developer-p{
+	display: flex;
+	
+	gap: 140px;
+	margin: 20px 0 20px 35px;
+}
+.sait-developer-icons{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+margin-left: 330px;
+}
+.icon{
+	width: 50px;
+	border-radius: 10px;
+	height: 50px;
+	background: rgb(33, 32, 32);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.github{
+	border-radius: 100%;
+}
+.blocks{
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	flex-wrap: wrap;
+}
+.icon img{
+	width: 40px;
+border-radius: 12px;
+}
+.mini-blocks{
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+	margin-top: 35px;
+	gap: 10px;
+}
+.mini-block{
+	border: solid rgba(255, 255, 255, 0.283) 1px;
+width: 110px;
+height: 50px;
+border-radius: 15px;color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.sait-developer-empty{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 680px;
+	height: 350px;
+	border-radius:30px ;
+	border: solid rgba(255, 255, 255, 0.283) 1px;
+	font-size: 35px;
+	transition: 0.5s;
+
+	font-weight: 100;
+}
+.sait-developer-empty h1 {
+	display: flex;
+/* z-index: 111px; */
+/* position: absolute; */
+	align-items: center;
+	color: white;
+	gap: 20px;
+	
+}
+.sait-developer-empty:hover h1 span{
+  -webkit-transform: rotateZ(45deg);
+	margin:  10px;
+  -ms-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+	transition: 0.5s;
+
+}
+.sait-developer-empty h1 span{
+	transition: 0.5s;
+
+}
+.sait-developer-empty:hover {
+		border: solid #fff 2px;	
+	transition: 0.5s;
+
+}
+
+
+

@@ -1,0 +1,26 @@
+.home img {
+ transform: scale(1.2);
+ margin-bottom: -50px;
+padding-bottom: 190pc;
+margin-left: 80px;
+position: relative;
+}
+.home-text{
+	position: absolute;
+	top: 0;
+	color: white;
+	margin-left: 410px;
+	margin-top: 300px;
+	text-align: center;
+	/* .................. */
+}
+.home-text h1{
+	font-size: 60px;
+	line-height: normal;
+	font-weight: 100;
+}
+.home-text h3{
+	color: rgba(255, 255, 255, 0.457);
+	margin: 15px 0;
+}
+

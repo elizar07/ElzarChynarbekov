@@ -1,0 +1,164 @@
+.about {
+	/* color: white	; */
+	position: absolute;
+	/* top: 1900px; */
+	bottom: -1600px;
+}
+.about-me h1 {
+	color: rgba(255, 255, 255, 0.475);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	bottom: -1600px;
+	position: absolute;
+}
+.about-me h1 span {
+	color: white;
+}
+.about h1 {
+	color: white;
+	/* line-height: 40px; */
+	margin-bottom: 50px;
+	font-size: 30px;
+}
+.about {
+	bottom: -2350px;
+	position: absolute;
+	/* margin-top: -100px	; */
+	display: flex;
+	align-items: end;
+	gap: 120px;
+}
+.about img {
+	width: 550px;
+	height: 700px;
+	border-radius: 20px;
+}
+.about img:hover {
+	background: black;
+}
+.sots-set {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.circle {
+	border: solid white 2px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.sots-circle {
+	width: 35px;
+	height: 35px;
+}
+/* .sots-circle:hover{
+	color: black;
+} */
+.circle:hover {
+	color: black;
+	background: white;
+	transition: 0.5s;
+}
+.circle:hover .sots-circle {
+	color: black;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 480px;
+  height: 620px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* .swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+} */
