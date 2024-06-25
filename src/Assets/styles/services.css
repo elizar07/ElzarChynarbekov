@@ -1,4 +1,4 @@
-.basic-services h1 {
+	.basic-services h1 {
 	color: rgba(255, 255, 255, 0.475);
 	display: flex;
 	align-items: center;
@@ -100,7 +100,7 @@ justify-content: center;
 	border: solid rgba(255, 255, 255, 0.283) 1px;
 	font-size: 35px;
 	transition: 0.5s;
-
+cursor: pointer;
 	font-weight: 100;
 }
 .sait-developer-empty h1 {

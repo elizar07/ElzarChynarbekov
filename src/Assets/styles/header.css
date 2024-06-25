@@ -64,3 +64,65 @@ color: rgb(0, 0, 0);
 	transition: 0.5s;
 
 }
+.main-form{
+	width: 650px;
+	height: 300px;
+	border-radius: 20px;
+	background: #ffffff;
+}
+.main-form-inputs{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-top: 40px;
+}
+.main-form-inputs input{
+width: 230px;
+border-radius: 10px;
+height: 55px;
+background: rgba(208, 208, 208, 0.598);
+
+border: none;
+}
+.main-form-inputs label{
+	color: black ;
+	z-index: 100;
+	top: -5px;
+}
+.main-form h1{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-size: 38px;
+}
+.main-form p{
+	margin-top: 20px;
+}
+.main-form{
+	position: absolute;
+	top: 20;
+margin-left: 50pc;
+}
+.main-from-icon{
+	color: #000;
+	font-size: 40px;
+	position: absolute;
+	margin-left: 580px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.main-form-strelka{
+	width: 60px;
+	height: 60px;
+	padding: 15px;
+	background: #000;
+	border-radius: 50%;
+	color: white;
+transition: 0.3s;
+
+}
+.main-form-strelka:hover{
+color: black;
+border: 1.5px solid black;
+background:white;
+transition: 0.3s;
+}

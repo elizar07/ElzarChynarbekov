@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { BsAsterisk } from 'react-icons/bs'
-import github from "../../Assets/img/GitHub-Mark-ea2971cee799.png"
-import figma from "../../Assets/img/figma icon.svg"
-import visual from "../../Assets/img/visual-studio-code-icon.webp"
-import canva from "../../Assets/img/canva.jpg"
-import capcut from "../../Assets/img/capcut.jpg"
-import adobe from "../../Assets/img/Adobe.svg"
-import ilustrator from "../../Assets/img/Illustrator.png"
-import photoshop from "../../Assets/img/adobe-photoshop-.svg"
+import github from '../../Assets/img/GitHub-Mark-ea2971cee799.png'
+import figma from '../../Assets/img/figma icon.svg'
+import visual from '../../Assets/img/visual-studio-code-icon.webp'
+import canva from '../../Assets/img/canva.jpg'
+import capcut from '../../Assets/img/capcut.jpg'
+import adobe from '../../Assets/img/Adobe.svg'
+import ilustrator from '../../Assets/img/Illustrator.png'
+import photoshop from '../../Assets/img/adobe-photoshop-.svg'
 import { HiArrowUpRight } from 'react-icons/hi2'
+import { MainContext } from '../../context'
 
 const Services = () => {
+	const { main, setMain } = useContext(MainContext)
+
 	return (
 		<div id='services'>
 			<div className='container'>
@@ -159,9 +162,7 @@ const Services = () => {
 								</div>
 							</div>
 						</div>
-						<div
-							className='sait-developer-empty'
-						>
+						<div className='sait-developer-empty' onClick={() => setMain(true)}>
 							<h1>
 								Обсудить проект{' '}
 								<span>

@@ -12,15 +12,15 @@ import Services from './components/Services'
 function App() {
   return (
     <div className="App">
-     <Header/>
-     <Home/>
-     <Services/>
-     <About/>
-     <Price/>
-     <Acardion/>
-     <Portfolio/>
-     <Contact/>
-     <Footer/>
+           <Header/>
+           <Home/>
+           <Services/>
+           <About/>
+           <Price/>
+           <Acardion/>
+           <Portfolio/>
+           <Contact/>
+           <Footer/>
     </div>
   );
 }

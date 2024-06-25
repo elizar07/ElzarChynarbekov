@@ -45,7 +45,7 @@ const About = () => {
 	const handleOpen = () => setOpen(true)
 	const handleClose = () => setOpen(false)
 	return (
-		<div id='about'>
+		<div id='abou'>
 			<div className='container'>
 				<div className='about-me'>
 					<h1>

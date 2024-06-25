@@ -15,11 +15,11 @@
 }
 a{
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .container{
   margin: 0 auto;
-  width: 95%;
+  width: 1300px;
 }
 button{
   border: none;

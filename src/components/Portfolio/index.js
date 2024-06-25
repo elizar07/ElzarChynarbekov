@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { BsAsterisk } from 'react-icons/bs'
 import { IoIosAdd } from 'react-icons/io'
 import estet from '../../Assets/img/estet.jpg'
+import { MainContext } from '../../context'
 
 const Portfolio = () => {
+		const { main, setMain } = useContext(MainContext)
+
 	return (
 		<div id='portfolio'>
 			<div className='container'>
@@ -137,7 +140,7 @@ const Portfolio = () => {
 								<div className='name-categors'>
 									<h1>Ваш проект</h1>
 								</div>
-								<div className='your-project-block'>
+								<div className='your-project-block' onClick={()=>setMain(true)}>
 									<IoIosAdd className='plus' />
 								</div>
 							</div>
