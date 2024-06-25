@@ -1,4 +1,3 @@
-
 // import { gsap } from 'gsap'
 // import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 // import React, { useContext, useState } from 'react'
@@ -121,14 +120,14 @@
 import { gsap } from 'gsap'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import React, { useContext } from 'react'
+import { FiChevronRight, FiX } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
-import { FiX, FiChevronRight } from 'react-icons/fi'
 import { MainContext } from '../../context'
 
 gsap.registerPlugin(ScrollToPlugin)
 
 const Header = () => {
-	const { main, setMain } = useContext(MainContext) 
+	const { main, setMain } = useContext(MainContext)
 
 	function toServices() {
 		gsap.to(window, {
@@ -172,7 +171,7 @@ const Header = () => {
 	return (
 		<div id='header'>
 			<div className='container'>
-				<div className='main-form' style={{ display: main ? 'block' : 'none' }}>
+				<div className='main-form z-[100]' style={{ display: main ? 'block' : 'none' }}>
 					<FiX onClick={() => setMain(false)} className='main-from-icon' />
 					<div className='pt-4 pl-9'>
 						<h1>Обсудить проект</h1>
@@ -238,6 +237,7 @@ const Header = () => {
 					</div>
 				</div>
 			</div>
+			{main ? <div onClick={() => setMain(false)} className='modalBg'></div> : ''}
 		</div>
 	)
 }

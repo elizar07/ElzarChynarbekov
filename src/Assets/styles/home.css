@@ -5,6 +5,11 @@ padding-bottom: 190pc;
 margin-left: 80px;
 position: relative;
 }
+
+.container{
+	margin: 0 auto;
+	width: 85%;
+}
 .home-text{
 	position: absolute;
 	top: 0;

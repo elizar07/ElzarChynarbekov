@@ -20,17 +20,15 @@
 	gap: 30px;
 }
 
-
 .table {
-	display: flex;
+	display: flex !important;
 	width: 1440px;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom:2px solid rgba(255, 255, 255, 0.322) ;
-	cursor: pointer;
-padding: 10px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.322);
+cursor: pointer;
+	padding: 10px;
 	transition: 0.3s;
-
 }
 
 .table:hover {
@@ -73,20 +71,20 @@ padding: 10px;
 	font-size: 25px;
 }
 .table h3 span {
-		transition: 0.5s;
+	transition: 0.5s;
 }
-.price-text h2{
-color: white;
-font-size: 80px;
-margin-top: 60px;
+.price-text h2 {
+	color: white;
+	font-size: 80px;
+	margin-top: 60px;
 }
-.price-text{
+.price-text {
 	display: flex;
 	align-items: center;
 	gap: 330px;
 }
 .price-text p {
-	color:rgba(255, 255, 255, 0.799);
+	color: rgba(255, 255, 255, 0.799);
 	font-size: 30px;
 	line-height: 35px;
 	margin-top: 40px;

@@ -39,7 +39,6 @@ const Price = () => {
 							</span>
 						</h3>
 					</div>
-
 					<div className='table'>
 						<h1>Многостраничный сайт</h1>
 						<p>

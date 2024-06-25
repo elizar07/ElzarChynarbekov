@@ -48,10 +48,10 @@ const Portfolio = () => {
 						<div className='ling'>
 							<img src={estet} alt='img' />
 							<div className='long-miniblocks'>
-								<div className='block'>name</div>
-								<div className='block'>name</div>
-								<div className='block'>name</div>
-								<div className='block'>name</div>
+								<div className='blockD'>name</div>
+								<div className='blockD'>name</div>
+								<div className='blockD'>name</div>
+								<div className='blockD'>name</div>
 							</div>
 						</div>
 					</div>
@@ -65,10 +65,10 @@ const Portfolio = () => {
 								<div className='ling'>
 									<img src={estet} alt='img' />
 									<div className='long-miniblocks'>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
 									</div>
 								</div>
 							</div>
@@ -80,42 +80,10 @@ const Portfolio = () => {
 								<div className='ling'>
 									<img src={estet} alt='img' />
 									<div className='long-miniblocks'>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-									</div>
-								</div>
-							</div>
-						</div>{' '}
-						<div className='project2'>
-							<div className='project'>
-								<div className='name-categors'>
-									<h1>Name site</h1>
-									<h2>categor</h2>
-								</div>
-								<div className='ling'>
-									<img src={estet} alt='img' />
-									<div className='long-miniblocks'>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-									</div>
-								</div>
-							</div>
-							<div className='project'>
-								<div className='name-categors'>
-									<h1>Name site</h1>
-									<h2>categor</h2>
-								</div>
-								<div className='ling'>
-									<img src={estet} alt='img' />
-									<div className='long-miniblocks'>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
 									</div>
 								</div>
 							</div>
@@ -129,10 +97,42 @@ const Portfolio = () => {
 								<div className='ling'>
 									<img src={estet} alt='img' />
 									<div className='long-miniblocks'>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
-										<div className='block'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+									</div>
+								</div>
+							</div>
+							<div className='project'>
+								<div className='name-categors'>
+									<h1>Name site</h1>
+									<h2>categor</h2>
+								</div>
+								<div className='ling'>
+									<img src={estet} alt='img' />
+									<div className='long-miniblocks'>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+									</div>
+								</div>
+							</div>
+						</div>{' '}
+						<div className='project2'>
+							<div className='project'>
+								<div className='name-categors'>
+									<h1>Name site</h1>
+									<h2>categor</h2>
+								</div>
+								<div className='ling'>
+									<img src={estet} alt='img' />
+									<div className='long-miniblocks'>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
+										<div className='blockD'>name</div>
 									</div>
 								</div>
 							</div>
