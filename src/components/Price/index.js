@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { BsAsterisk } from 'react-icons/bs'
 import { HiArrowUpRight } from 'react-icons/hi2'
+import { MainContext } from '../../context'
 
 const Price = () => {
+	const { main, setMain } = useContext(MainContext)
+
 	return (
 		<div id='price'>
 			<div className='container'>
@@ -22,7 +25,7 @@ const Price = () => {
 					</div>
 				</div>
 				<div className='price'>
-					<div className='table'>
+					<div className='table' onClick={()=> setMain(true)}>
 						<h1>Одностраничный сайт</h1>
 						<p>
 							Лендинг,сайт-портфолио,
@@ -39,7 +42,7 @@ const Price = () => {
 							</span>
 						</h3>
 					</div>
-					<div className='table'>
+					<div className='table' onClick={()=> setMain(true)}>
 						<h1>Многостраничный сайт</h1>
 						<p>
 							Корпоративный сайт, сайт <br />
@@ -55,7 +58,7 @@ const Price = () => {
 							</span>
 						</h3>
 					</div>
-					<div className='table'>
+					<div className='table' onClick={()=> setMain(true)}>
 						<h1>Интернет-Магазин</h1>
 						<p>
 							Магазин с каталогом до 5000
@@ -72,7 +75,7 @@ const Price = () => {
 							</span>
 						</h3>
 					</div>
-					<div className='table'>
+					<div className='table' onClick={()=> setMain(true)}>
 						<h1>Создание видео</h1>
 						<p>
 							Клипы,короткие видео, <br />
@@ -88,7 +91,7 @@ const Price = () => {
 							</span>
 						</h3>
 					</div>
-					<div className='table'>
+					<div className='table' onClick={()=> setMain(true)}>
 						<h1>Создание Дизайна</h1>
 						<p>
 							Шаблоны,фото-монтаж,дизайн

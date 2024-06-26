@@ -11,27 +11,45 @@ const Contact = () => {
 	const [userCheck_website, setUserCheck_website] = useState(false)
 	const [userCheck_video_i_t_d, setUserCheck_video_i_t_d] = useState(false)
 	const [userCheck_design_i_t_d, setUserCheck_design_i_t_d] = useState(false)
+
 	const submitTelegram = () => {
 		const my_id = '-1002217889076'
 		const token = '7289936064:AAEnmOm-u46g-ve56Eb9uAIY6QOjR-t_ZQs'
 		const url_api = `https://api.telegram.org/bot${token}/sendMessage`
+		if (
+			(userName,
+			userPhone === '' ||
+				(userCheck_design_i_t_d &&
+					userCheck_video_i_t_d &&
+					userCheck_website === false))
+		) {
+			alert('Заполните поле')
 
-		const userData = {
-			chat_id: my_id,
-			parse_mode: 'html',
-			text: `Заказ:  \n Имя: ${userName},\n Номер тел: ${userPhone},\n Веб-сайт И.Т.Д:  ${userCheck_website},\n Дизайн И.Т.Д:  ${userCheck_design_i_t_d}, \n Видео И.Т.Д:  ${userCheck_video_i_t_d} `
+		} else {
+			const userData = {
+				chat_id: my_id,
+				parse_mode: 'html',
+				text: `Заказ:  \n Имя: ${userName},\n Номер тел: ${userPhone},\n Веб-сайт И.Т.Д:  ${userCheck_website},\n Дизайн И.Т.Д:  ${userCheck_design_i_t_d}, \n Видео И.Т.Д:  ${userCheck_video_i_t_d} `
+			}
+
+			axios
+				.post(url_api, userData)
+				.then(response => {
+					console.log('Message sent', response)
+				})
+				.catch(error => {
+					console.error('Error sending message', error)
+				})
+			setUserCheck_design_i_t_d(false)
+			setUserCheck_video_i_t_d(false)
+			setUserCheck_website(false)
+			setUserName('')
+			setUserPhone('')
 		}
-
-		axios
-			.post(url_api, userData)
-			.then(response => {
-				console.log('Message sent', response)
-			})
-			.catch(error => {
-				console.error('Error sending message', error)
-			})
 	}
-console.log(userCheck_website);
+	console.log(userCheck_website)
+	console.log(userCheck_design_i_t_d)
+	console.log(userCheck_video_i_t_d)
 	return (
 		<div id='contact'>
 			<div className='container'>
@@ -85,6 +103,7 @@ console.log(userCheck_website);
 								<div className='relative z-0'>
 									<input
 										onChange={e => setUserName(e.target.value)}
+										value={userName}
 										type='text'
 										id='floating_standard'
 										className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
@@ -99,6 +118,7 @@ console.log(userCheck_website);
 								</div>
 								<div className='relative z-0'>
 									<input
+										value={userPhone}
 										onChange={e => setUserPhone(e.target.value)}
 										type='text'
 										id='floating_standard'
@@ -118,13 +138,15 @@ console.log(userCheck_website);
 								<div className='service-top'>
 									<div className='contact-service-text'>
 										<input
-											onChange={e => setUserCheck_website(e.target.checked)}
+											value={userCheck_website}
+											onClick={e => setUserCheck_website(e.target.checked)}
 											type='checkbox'
 										/>
 										<h6>Разработка сайтов</h6>
 									</div>
 									<div className='contact-service-text'>
 										<input
+											value={userCheck_video_i_t_d}
 											onChange={e => setUserCheck_video_i_t_d(e.target.checked)}
 											type='checkbox'
 										/>
@@ -134,7 +156,8 @@ console.log(userCheck_website);
 								<div className='service-bottom'>
 									<div className='contact-service-text'>
 										<input
-											onChange={e => setUserCheck_design_i_t_d(e.target.checked)}
+											checked={userCheck_design_i_t_d}
+											onClick={e => setUserCheck_design_i_t_d(e.target.checked)}
 											type='checkbox'
 										/>
 										<h6>Создание дизайна и.т.д</h6>

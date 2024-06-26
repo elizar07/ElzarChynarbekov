@@ -87,6 +87,7 @@ border: solid white 1px;
 background: none;
 color: white;
 text-align: left;
+padding-left: 15px;
 }
 .form label span{
 color: white;
