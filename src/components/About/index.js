@@ -24,8 +24,8 @@ import photo_15 from '../../Assets/img/photo_15.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/effect-cards'
+import { PiGithubLogoFill } from 'react-icons/pi'
 
-// import required modules
 import { EffectCards } from 'swiper/modules'
 
 const style = {
@@ -69,7 +69,7 @@ const About = () => {
 						</h1>
 						<div className='sots-set'>
 							<div className='circle'>
-								<a href='https://t.me/elzar07'>
+								<a href='https://t.me/elzarbek24'>
 									<FaTelegramPlane className='sots-circle' />
 								</a>
 							</div>
@@ -79,12 +79,14 @@ const About = () => {
 								</a>
 							</div>
 							<div className='circle'>
-								<SiGmail className='sots-circle' />
+								<a href='https://github.com/elizar07'>
+									<PiGithubLogoFill className='sots-circle' />
+								</a>
 							</div>
 							<div className='circle'>
 								<a
 									className='sots-circle'
-									href='https://www.instagram.com/invites/contact/?i=6ekc29pnxpd9&utm_content=h4au13v'
+									href='https://www.instagram.com/chynarbekov_eee/'
 								>
 									<AiFillInstagram className='sots-circle' />
 								</a>
@@ -109,20 +111,48 @@ const About = () => {
 								className='mySwiper'
 							>
 								<h1>Галерея</h1>
-								<SwiperSlide><img src={photo_15} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_1} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_2} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_3} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_4} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_5} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_6} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_7} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_8} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_10} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_11} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_12} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_13} alt="img" /></SwiperSlide>
-								<SwiperSlide><img src={photo_14} alt="img" /></SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_15} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_1} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_2} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_3} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_4} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_5} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_6} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_7} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_8} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_10} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_11} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_12} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_13} alt='img' />
+								</SwiperSlide>
+								<SwiperSlide>
+									<img src={photo_14} alt='img' />
+								</SwiperSlide>
 							</Swiper>
 						</>
 					</Modal>

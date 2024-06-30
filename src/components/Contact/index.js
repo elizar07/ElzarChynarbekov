@@ -4,6 +4,7 @@ import { AiFillInstagram } from 'react-icons/ai'
 import { FaTelegramPlane } from 'react-icons/fa'
 import { IoLogoWhatsapp } from 'react-icons/io5'
 import { SiGmail } from 'react-icons/si'
+import { PiGithubLogoFill } from 'react-icons/pi'
 
 const Contact = () => {
 	const [userName, setUserName] = useState('')
@@ -56,7 +57,7 @@ const Contact = () => {
 				<h1 className='kontakt'>Контакты</h1>
 				<div className='contact'>
 					<div className='sots-blocks'>
-						<a href='https://t.me/elzar07'>
+						<a href='https://t.me/elzarbek24'>
 							<div className='sots-block'>
 								<div className='circles'>
 									<FaTelegramPlane className='sots-circles' />
@@ -70,13 +71,15 @@ const Contact = () => {
 								</div>
 							</div>
 						</a>
-						<div className='sots-block'>
-							<div className='circles'>
-								<SiGmail className='sots-circles' />
+						<a href='https://github.com/elizar07'>
+							<div className='sots-block'>
+								<div className='circles'>
+									<PiGithubLogoFill className='sots-circles' />
+								</div>
 							</div>
-						</div>
+						</a>
 						<a
-							href='https://www.instagram.com/invites/contact/?i=6ekc29pnxpd9&utm_content=h4au13v'
+							href='https://www.instagram.com/chynarbekov_eee/'
 							className='sots-circles'
 						>
 							<div className='sots-block'>
